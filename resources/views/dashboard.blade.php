@@ -29,8 +29,18 @@
                     leading-[22px]">
                     Hari ini {{ \Carbon\Carbon::now()->translatedFormat('l, d F Y') }}
                 </p>
+                @if (Auth::user()->role == 'mahasiswa')
+                    <div class="pt-10">
+                        <a href="{{ route('surat-pengajuan.index') }}"
+                            class="bg-[#0D243C] py-[18px] px-[27px] text-white rounded-xl">Lihat
+                            Pengajuan Surat</a>
+                    </div>
+                @endif
             </div>
         </div>
         <!-- /.container-fluid -->
     </div>
 @endsection
+@push('scripts')
+    @include('partials.alert')
+@endpush

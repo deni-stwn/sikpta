@@ -31,6 +31,10 @@
                         </th>
                         <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                            email
+                        </th>
+                        <th
+                            class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                             NAMA USER
                         </th>
                         <th
@@ -48,6 +52,7 @@
                         <tr>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $loop->iteration }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">Petugas_{{ $user->id }}</td>
+                            <td class="border-b border-gray-200 bg-white text-sm">{{ $user->email }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $user->name }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $user->role }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm flex gap-3">

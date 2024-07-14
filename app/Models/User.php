@@ -49,4 +49,9 @@ class User extends Authenticatable
         // Assuming your user roles are stored in a roles column in the database
         return $this->role === $role;
     }
+
+    public function pengajuanSurat()
+    {
+        return $this->hasMany(PengajuanSurat::class);
+    }
 }

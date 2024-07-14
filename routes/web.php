@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DaftarMahasiswaController;
 use App\Http\Controllers\DaftarPetugasController;
+use App\Http\Controllers\PengajuanSuratController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +31,16 @@ Route::middleware('auth')->group(function () {
     Route::middleware(['role:admin'])->group(function () {
         Route::resource('daftar-mahasiswa', DaftarMahasiswaController::class);
         Route::resource('daftar-petugas', DaftarPetugasController::class);
+    });
+    Route::middleware(['role:petugas'])->group(function () {
+        Route::get('/surat-pengajuan', [PengajuanSuratController::class, 'index'])->name('surat-pengajuan.index');
+        Route::get('/surat-pengajuan/create', [PengajuanSuratController::class, 'create'])->name('surat-pengajuan.create');
+        // Route::post('/surat-pengajuan', [PengajuanSuratController::class, 'store'])->name('surat-pengajuan.store');
+        Route::delete('/surat-pengajuan/{id}', [PengajuanSuratController::class, 'destroy'])->name('surat-pengajuan.destroy');
+    });
+    Route::middleware(['role:mahasiswa'])->group(function () {
+        Route::get('/surat-pengajuan/create', [PengajuanSuratController::class, 'create'])->name('surat-pengajuan.create');
+        Route::post('/surat-pengajuan', [PengajuanSuratController::class, 'store'])->name('surat-pengajuan.store');
     });
 });
 

@@ -40,15 +40,6 @@
                 <span class="ms-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
             </label>
         </div>
-
-        {{-- <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 hover:text-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-        </div> --}}
         <button type="submit" class="bg-[#22B07D] text-white px-6 py-2 rounded-lg w-full mt-6">LOGIN</button>
     </form>
     <div class="flex justify-center text-[#9D9D9D] text-[10px]">

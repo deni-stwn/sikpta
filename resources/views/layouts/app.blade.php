@@ -47,7 +47,8 @@
             padding: 5px 10px;
         }
 
-        table.dataTable td.dt-type-numeric {
+        table.dataTable td.dt-type-numeric,
+        table.dataTable td.dt-type-date {
             text-align: left;
         }
 
@@ -76,7 +77,7 @@
         @include('partials.sidebar')
 
         <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
+        <div class="content-wrapper ">
             <!-- Content Header (Page header) -->
             @yield('content')
             <!-- /.content -->
@@ -90,13 +91,13 @@
         <!-- /.control-sidebar -->
 
         <!-- Main Footer -->
-        <footer class="main-footer">
+        {{-- <footer class="main-footer">
             <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 3.2.0
             </div>
-        </footer>
+        </footer> --}}
     </div>
     <!-- ./wrapper -->
 

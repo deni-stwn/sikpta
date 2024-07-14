@@ -1,4 +1,4 @@
-<aside class="main-sidebar bg-white border-[#E4E4E4] border">
+<aside class="main-sidebar bg-white border-[#E4E4E4] border fixed">
     <!-- Brand Logo -->
     <a href="#" class="brand-link align-items-center flex">
         <img src="{{ asset('assets/images/svg/ICONLOGO.svg') }}" alt="AdminLTE Logo" class="brand-image"
@@ -45,6 +45,37 @@
                             <i class="nav-icon fas fa-user-graduate"></i>
                             <p class="page-name">
                                 Daftar Mahasiswa
+                            </p>
+                        </a>
+                    </li>
+                @endif
+                @if (Auth::user()->role == 'petugas')
+                    <li class="nav-item">
+                        <a href="{{ route('surat-pengajuan.index') }}"
+                            class="nav-link {{ request()->routeIs('surat-pengajuan.index') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-envelope"></i>
+                            <p class="page-name">
+                                Pengajuan Surat
+                            </p>
+                        </a>
+                    </li>
+                    {{-- <li class="nav-item">
+                        <a href="{{ route('surat-pengajuan.create') }}"
+                            class="nav-link {{ request()->routeIs('surat-pengajuan.create') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-pen"></i>
+                            <p class="page-name">
+                                Buat Pengajuan Surat
+                            </p>
+                        </a>
+                    </li> --}}
+                @endif
+                @if (Auth::user()->role == 'mahasiswa')
+                    <li class="nav-item">
+                        <a href="{{ route('surat-pengajuan.create') }}"
+                            class="nav-link {{ request()->routeIs('surat-pengajuan.create') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-pen"></i>
+                            <p class="page-name">
+                                Pengajuan Surat
                             </p>
                         </a>
                     </li>
