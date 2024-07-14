@@ -35,6 +35,11 @@
             display: none;
         }
 
+        /* .min-h-screen.flex.flex-col.sm:justify-center.items-center.pt-6.sm:pt-0.bg-gray-100 div a svg,
+        svg.w-20.h-20.fill-current.text-gray-500 {
+            display: none !important;
+        } */
+
         div.dt-container .dt-paging .dt-paging-button.current {
             background-color: #22B07D;
             color: white !important;
