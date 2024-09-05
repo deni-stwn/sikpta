@@ -11,9 +11,24 @@
                     value="{{ $user->name }}">
             </div>
             <div class="mb-3">
-                <label for="username" class="form-label">Username Mahasiswa</label>
+                <label for="username" class="form-label">Username/NRP Mahasiswa</label>
                 <input type="text" class="form-control rounded-md border-gray-700 border" id="username" name="username"
                     value="{{ $user->username }}">
+            </div>
+            <div class="mb-3">
+                <label for="fakultas" class="form-label">Fakultas</label>
+                <input type="text" class="form-control rounded-md border-gray-700 border" id="fakultas" name="fakultas"
+                    value="{{ $user->fakultas }}">
+            </div>
+            <div class="mb-3">
+                <label for="prodi" class="form-label">Prodi</label>
+                <input type="text" class="form-control rounded-md border-gray-700 border" id="prodi" name="prodi"
+                    value="{{ $user->prodi }}">
+            </div>
+            <div class="mb-3">
+                <label for="no_hp" class="form-label">Nomor Hp Mahasiswa</label>
+                <input type="text" class="form-control rounded-md border-gray-700 border" id="no_hp" name="no_hp"
+                    value="{{ $user->no_hp }}">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>

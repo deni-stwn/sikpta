@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <x-navbar title="Surat Masuk"></x-navbar>
+    <x-navbar title="Surat Keluar"></x-navbar>
     <!-- Main content -->
     <div class="m-[40px] bg-white py-10 px-11 rounded-xl">
         <div class="flex justify-between items-center">
@@ -22,6 +22,9 @@
                             No</th>
                         <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
+                            No Surat</th>
+                        <th
+                            class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                             Nama Mahasiswa</th>
                         <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
@@ -41,15 +44,7 @@
                         <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                             Nama Kordinator</th>
-                        <th
-                            class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                            Status</th>
-                        {{-- <th
-                            class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                            TGL Mulai</th>
-                        <th
-                            class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                            TGL Selesai</th> --}}
+
                         {{-- <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                             Tgl Buat</th> --}}
@@ -61,9 +56,8 @@
                 <tbody>
                     @foreach ($suratPengajuan as $item)
                         <tr>
-                            <td class="border-b border-gray-200 bg-white text-sm">
-                                {{ $loop->iteration }}
-                            </td>
+                            <td class="border-b border-gray-200 bg-white text-sm">{{ $loop->iteration }}</td>
+                            <td class="border-b border-gray-200 bg-white text-sm">{{ $item->nomor_surat }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->user->name }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->jenis_surat }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->tempat_kerja }}</td>
@@ -71,19 +65,12 @@
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->jenis_kerja }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->pembimbing_lapangan }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->nama_kordinator }}</td>
-                            <td class="border-b border-gray-200 bg-white text-sm">
-                                <span
-                                    class=" {{ $item->status != 'updated' ? 'badge badge-danger' : 'badge badge-success' }}">
-                                    {{ $item->status != 'updated' ? 'unread' : 'read' }}
-                                </span>
-                            </td>
-                            {{-- <td class="border-b border-gray-200 bg-white text-sm">{{ $item->tgl_mulai }}</td>
-                            <td class="border-b border-gray-200 bg-white text-sm">{{ $item->tgl_selesai }}</td> --}}
                             {{-- <td class="border-b border-gray-200 bg-white text-sm">
                                 {{ $item->created_at->timezone('Asia/Jakarta')->format('Y-m-d H:i:s') }} WIB</td> --}}
                             <td class="border-b border-gray-200 bg-white text-sm">
-                                <div class=" flex gap-4">
-                                    <form action="{{ route('pengajuan-surat.destroy', $item->id) }}" method="POST"
+                                <div class="flex gap-4">
+
+                                    {{-- <form action="{{ route('pengajuan-surat.destroy', $item->id) }}" method="POST"
                                         class="inline">
                                         @csrf
                                         @method('DELETE')
@@ -91,13 +78,20 @@
                                             class="text-red-500 font-bold py-2 rounded flex justify-center items-center">
                                             <i class="fas fa-trash"></i>
                                         </button>
-                                    </form>
-
-                                    <a href="{{ route('pengajuan-surat.edit', $item->id) }}"
-                                        class="text-yellow-500 font-bold py-2 rounded flex justify-center items-center">
-                                        <i class="fas fa-edit"></i>
+                                    </form> --}}
+                                    <a href="{{ route('surat-upload', $item->id) }}"
+                                        class="text-blue-500 font-bold py-2 rounded flex justify-center items-center">
+                                        <i class="fas fa-upload"></i>
                                     </a>
                                 </div>
+                                {{-- <a target="_blank" href="{{ route('download.pdf') }}"
+                                    class="text-blue-500 font-bold py-2 rounded flex justify-center items-center">
+                                    <i class="fas fa-print"></i>
+                                </a> --}}
+                                {{-- <a href="{{ route('pengajuan-surat.edit', $item->id) }}"
+                                    class="text-yellow-500 font-bold py-2 rounded flex justify-center items-center">
+                                    <i class="fas fa-edit"></i>
+                                </a> --}}
                             </td>
                         </tr>
                     @endforeach

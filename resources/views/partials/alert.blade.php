@@ -9,7 +9,7 @@
             timer: 3000,
         })
     </script>
-@elseif($message = Session::get('failed'))
+@elseif($message = Session::get('error'))
     <script>
         Swal.fire({
             icon: 'error',

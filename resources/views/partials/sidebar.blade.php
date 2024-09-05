@@ -51,11 +51,29 @@
                 @endif
                 @if (Auth::user()->role == 'petugas')
                     <li class="nav-item">
-                        <a href="{{ route('surat-pengajuan.index') }}"
-                            class="nav-link {{ request()->routeIs('surat-pengajuan.index') ? 'active' : '' }}">
+                        <a href="{{ route('pengajuan-surat.index') }}"
+                            class="nav-link {{ request()->routeIs('pengajuan-surat.index') ? 'active' : '' }}">
                             <i class="nav-icon fas fa-envelope"></i>
                             <p class="page-name">
-                                Pengajuan Surat
+                                Surat Masuk
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('surat-keluar.index') }}"
+                            class="nav-link {{ request()->routeIs('surat-keluar.index') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-envelope-open"></i>
+                            <p class="page-name">
+                                Surat Keluar
+                            </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('arsip.index') }}"
+                            class="nav-link {{ request()->routeIs('arsip.index') ? 'active' : '' }}">
+                            <i class="nav-icon fas fa-archive"></i>
+                            <p class="page-name">
+                                Arsip Surat
                             </p>
                         </a>
                     </li>
