@@ -12,12 +12,11 @@
                     class="form-control focus:outline-none focus:ring-0 bg-transparent border-none text-black pl-0"
                     type="search" placeholder="Search" aria-label="Search">
             </div>
-            {{-- buat tombol tambah surat --}}
-            {{-- <a href="{{ route('pengajuan-surat.create') }}"
-                class="btn bg-[#3B82F6] text-white font-bold py-2 rounded flex justify-center items-center">
+            <a href="{{ route('surat-keluar.create') }}"
+                class="btn bg-[#22B07D] text-white font-normal py-2 rounded-full flex justify-center items-center">
                 <i class="fas fa-plus"></i>
-                <span class="ml-2">Tambah Surat</span>
-            </a> --}}
+                <span class="ml-2 text-[14px]">Tambah Surat</span>
+            </a>
         </div>
         <div class="container-fluid">
             <table id="table-pengajuan" class="min-w-full leading-normal">

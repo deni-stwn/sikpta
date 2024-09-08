@@ -12,4 +12,9 @@ class SuratKeluarController extends Controller
         $suratPengajuan = PengajuanSurat::where('status', 'updated')->with('user')->get();
         return view('pages.Petugas.SuratKeluar.index', compact('suratPengajuan'));
     }
+
+    public function create()
+    {
+        return view('pages.Petugas.SuratKeluar.create');
+    }
 }
