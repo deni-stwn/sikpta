@@ -36,6 +36,15 @@ Route::middleware('auth')->group(function () {
     //pengajuan surat
     Route::get('/download-pdf/{id}', [PdfController::class, 'generatePdf'])->name('download.pdf');
     Route::get('/download-pdf-sk/{id}', [PdfController::class, 'generatePdfsk'])->name('download.pdf.sk');
+    // !
+    Route::get('/download-pdf-1/{id}', [PdfController::class, 'generatePdf1'])->name('download.pdf.1');
+    // !
+    Route::get('/download-pdf-sk/{id}/{viewName}', [PdfController::class, 'generatePdfGeneral'])->name('generatePdfGeneral');
+    Route::get('/download-pdf-sk', [PdfController::class, 'generatePdfGeneral_example'])->name('generatePdfGeneral_example');
+    Route::get('viewPdf', function () {
+        return view('templateSurat.1');
+    });
+    // !
     Route::post('/surat-pengajuan/approve/{id}', [PengajuanSuratController::class, 'approve'])->name('surat-pengajuan.approve');
 Route::post('/surat-pengajuan/reject/{id}', [PengajuanSuratController::class, 'reject'])->name('surat-pengajuan.reject');
     //pengajuan surat

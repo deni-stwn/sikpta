@@ -34,7 +34,7 @@
                         <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                             Jenis Surat</th>
-                        <th
+                        {{-- <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
                             Tempat Kerja</th>
                         <th
@@ -48,7 +48,7 @@
                             Pembimbing Lapangan</th>
                         <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
-                            Nama Kordinator</th>
+                            Nama Kordinator</th> --}}
 
                         {{-- <th
                             class="border-b-2 border-gray-200 text-left text-xs font-semibold text-gray-700 uppercase tracking-wider">
@@ -65,11 +65,11 @@
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->nomor_surat }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->user->name }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->jenis_surat }}</td>
-                            <td class="border-b border-gray-200 bg-white text-sm">{{ $item->tempat_kerja }}</td>
+                            {{-- <td class="border-b border-gray-200 bg-white text-sm">{{ $item->tempat_kerja }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->nama_perusahaan }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->jenis_kerja }}</td>
                             <td class="border-b border-gray-200 bg-white text-sm">{{ $item->pembimbing_lapangan }}</td>
-                            <td class="border-b border-gray-200 bg-white text-sm">{{ $item->nama_kordinator }}</td>
+                            <td class="border-b border-gray-200 bg-white text-sm">{{ $item->nama_kordinator }}</td> --}}
                             {{-- <td class="border-b border-gray-200 bg-white text-sm">
                                 {{ $item->created_at->timezone('Asia/Jakarta')->format('Y-m-d H:i:s') }} WIB</td> --}}
                             <td class="border-b border-gray-200 bg-white text-sm">
@@ -88,6 +88,13 @@
                                         class="btn-arsip text-blue-500 font-bold py-2 rounded flex justify-center items-center">
                                         <i class="fas fa-upload"></i>
                                     </a>
+                                    {{-- print pdf --}}
+                                    {{-- {{ route('download.pdf.1', $id) }} --}}
+                                    <a title="Print" target="_blank" href="{{ route('download.pdf.1', $item->id) }}"
+                                        class="text-blue-500 font-bold py-2 rounded flex justify-center items-center">
+                                        <i class="fas fa-print"></i>
+                                    </a>
+
                                 </div>
                                 {{-- <a target="_blank" href="{{ route('download.pdf') }}"
                                     class="text-blue-500 font-bold py-2 rounded flex justify-center items-center">
