@@ -54,6 +54,7 @@ Route::post('/surat-pengajuan/reject/{id}', [PengajuanSuratController::class, 'r
         Route::delete('/surat-pengajuan/{id}', [PengajuanSuratController::class, 'destroy'])->name('pengajuan-surat.destroy');
         Route::get('/arsip', [ArsipController::class, 'index'])->name('arsip.index');
         Route::get('surat-keluar/create', [SuratKeluarController::class, 'create'])->name('surat-keluar.create');
+        Route::post('surat-keluar', [SuratKeluarController::class, 'store'])->name('surat-keluar.store');
     });
     // Route::middleware(['role:petugas'])->group(function () {
     // });

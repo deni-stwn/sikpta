@@ -21,4 +21,18 @@ class PdfController extends Controller
         $pdf = PDF::loadView('PDFseminarKualifikasi', ['surat' => $surat]);
         return $pdf->download('document.pdf');
     }
+
+    public function generatePdfGeneral($id, $viewName)
+{
+
+    $surat = PengajuanSurat::where('id', $id)
+        ->where('status', 'updated')
+        ->with('user')
+        ->firstOrFail();
+
+    $pdf = PDF::loadView($viewName, ['surat' => $surat]);
+
+    return $pdf->download($viewName . '.pdf');
+}
+
 }
