@@ -24,7 +24,8 @@
                             value="{{ $surat->jenis_surat }}">
                     </div>
                     <div>
-                        <label for="file" class="block text-sm font-medium text-gray-700">File</label>
+                        <label for="file" class="block text-sm font-medium text-gray-700">File Surat Sesuai Nomor
+                            Surat</label>
                         <div class="mt-1 flex justify-between items-center">
                             <input type="file" name="file_arsip" id="file_arsip"
                                 class="block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">

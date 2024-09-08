@@ -48,8 +48,6 @@
                             </p>
                         </a>
                     </li>
-                @endif
-                @if (Auth::user()->role == 'petugas')
                     <li class="nav-item">
                         <a href="{{ route('pengajuan-surat.index') }}"
                             class="nav-link {{ request()->routeIs('pengajuan-surat.index') ? 'active' : '' }}">
@@ -77,6 +75,8 @@
                             </p>
                         </a>
                     </li>
+                @endif
+                @if (Auth::user()->role == 'petugas')
                     {{-- <li class="nav-item">
                         <a href="{{ route('surat-pengajuan.create') }}"
                             class="nav-link {{ request()->routeIs('surat-pengajuan.create') ? 'active' : '' }}">

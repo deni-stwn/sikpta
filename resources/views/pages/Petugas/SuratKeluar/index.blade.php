@@ -12,6 +12,12 @@
                     class="form-control focus:outline-none focus:ring-0 bg-transparent border-none text-black pl-0"
                     type="search" placeholder="Search" aria-label="Search">
             </div>
+            {{-- buat tombol tambah surat --}}
+            {{-- <a href="{{ route('pengajuan-surat.create') }}"
+                class="btn bg-[#3B82F6] text-white font-bold py-2 rounded flex justify-center items-center">
+                <i class="fas fa-plus"></i>
+                <span class="ml-2">Tambah Surat</span>
+            </a> --}}
         </div>
         <div class="container-fluid">
             <table id="table-pengajuan" class="min-w-full leading-normal">
@@ -79,8 +85,8 @@
                                             <i class="fas fa-trash"></i>
                                         </button>
                                     </form> --}}
-                                    <a href="{{ route('surat-upload', $item->id) }}"
-                                        class="text-blue-500 font-bold py-2 rounded flex justify-center items-center">
+                                    <a title="Arsip" href="{{ route('surat-upload', $item->id) }}"
+                                        class="btn-arsip text-blue-500 font-bold py-2 rounded flex justify-center items-center">
                                         <i class="fas fa-upload"></i>
                                     </a>
                                 </div>
@@ -119,6 +125,24 @@
             // Custom search input binding
             $('#customSearchBox').on('keyup', function() {
                 table.search(this.value).draw();
+            });
+
+            $('.btn-arsip').on('click', function(e) {
+                e.preventDefault();
+                var url = $(this).attr('href');
+                Swal.fire({
+                    title: 'Apakah Anda yakin?',
+                    text: "Anda akan mengarsipkan surat ini!",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonColor: '#3085d6',
+                    cancelButtonColor: '#d33',
+                    confirmButtonText: 'Ya, arsipkan!'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location.href = url;
+                    }
+                });
             });
         });
     </script>
