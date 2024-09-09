@@ -105,6 +105,7 @@
             </table>
         </div>
         <!-- /.container-fluid -->
+      
     </div>
 @endsection
 

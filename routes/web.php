@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
     //pengajuan surat
     Route::get('/download-pdf/{id}', [PdfController::class, 'generatePdf'])->name('download.pdf');
     Route::get('/download-pdf-sk/{id}', [PdfController::class, 'generatePdfsk'])->name('download.pdf.sk');
+    Route::get('/download-pdf-sk', [PdfController::class, 'generatePdfGeneral_example'])->name('generatePdfGeneral_example');
     // !
     Route::get('/download-pdf-1/{id}', [PdfController::class, 'generatePdf1'])->name('download.pdf.1');
     // !

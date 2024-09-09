@@ -111,6 +111,11 @@
             </table>
         </div>
         <!-- /.container-fluid -->
+        <div class="flex justify-end">
+            <a href="{{ route('generatePdfGeneral_example') }}" class="btn btn-primary mt-4">
+                <i class="fas fa-file-pdf"></i> Generate PDF
+            </a>
+        </div>
     </div>
 @endsection
 
