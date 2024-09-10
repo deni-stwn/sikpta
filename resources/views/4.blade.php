@@ -88,7 +88,7 @@
             <th style="width: 55%;">Catatan Saran Perbaikan</th>
         </tr>
         <tr>
-            <td style="vertical-align: top; height: 140pt;">-Relevansi usulan solusi terhadap persoalan 
+            <td style="vertical-align: top; padding-bottom:140pt;">-Relevansi usulan solusi terhadap persoalan 
                 <br>
                 - Ketepatan penggunaan konsep & literatur
                 <br>
@@ -104,21 +104,28 @@
             </td>
             <td></td>
         </tr>
+       
     </table>
-    <p style="margin-top: 10pt; height: 10pt">Pengesahan Perbaikan: (ditandatangani saat selesai perbaikan)</p>
+    
     <table>
         <tr>
-            <td style="height: 60pt; vertical-align: top;padding-top: 0px !important; padding-left: 5px !important">
-                <p>Peserta,</p>
-            <p>(.......................)</p>
+            <td style="width: 45%; padding-top:0 !important">
+                <p style="height: 10pt; margin:0 !important"><strong>ditandatangani saat selesai perbaikan</strong></p>
+                <p style="text-align: center; margin-bottom:0 !important">Peserta,</p>
+                <br>
+                <br>
+                <p style="text-align: center;">
+                    (...................................................)
+                </p>
+              
             </td>
-            <td style="height: 60pt; vertical-align: top;padding-top: 0px !important; padding-left: 5px !important">
-                <p>Pembimbing Utama,</p>
-                <p>(.......................)</p>
-            </td>
-            <td style="height: 60pt; vertical-align: top;padding-top: 0px !important; padding-left: 5px !important">
-                <p>Pembimbing Pendamping,</p>
-                <p>(.......................)</p>
+            <td style="width: 55%;">
+                <p style="margin-top: 0 !important; text-align: center;">Pembimbing KP</p>
+                <br>
+                <br>
+                <p style="text-align: center;">
+                    (...................................................)
+                </p>
             </td>
         </tr>
     </table>

@@ -76,10 +76,10 @@
         </tr>
     </table>
     <p class="titleSurat textCenter" style="height: 10pt"> <strong>Form Catatan Perbaikan Seminar Kualifikasi Penelitian</strong></p>
-    <p style="height: 10pt">Semester : <span>7</span></p>
-    <p style="height: 10pt">Prodi : <span> </span></p>
-    <p style="height: 10pt">NPM/Nama : <span> </span></p>
-    <p style="height: 10pt">Judul TA :<span> </span></p>
+    <p style="height: 10pt">Semester<span style="color:white">aaaa/a//</span> : <span> 7</span></p>
+    <p style="height: 10pt">Prodi<span style="color:white">aaaaaaaa///</span> : <span> </span></p>
+    <p style="height: 10pt">NPM/Nama<span style="color:white">aaa/</span> : <span> </span></p>
+    <p style="height: 10pt">Judul TA<span style="color:white">aaaaaa</span> :<span> </span></p>
     <p>Catatan Perbaikan: (diisi saat sidang berlangsung dan diserahkan langsung ke peserta ybs setelah Seminar
         Kualifikasi Penelitian selesai)</p>
     <table>
