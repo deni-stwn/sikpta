@@ -23,8 +23,8 @@ class PdfController extends Controller
     }
     public function generatePdfGeneral_example()
     {
-        $pdf = PDF::loadView('FormCatatan');
-        return $pdf->download('TesterSurat.5.pdf');
+        $pdf = PDF::loadView('TestSurat');
+        return $pdf->download('TesterSurat.6.pdf');
     }
 
 

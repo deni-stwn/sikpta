@@ -48,6 +48,7 @@
         .doc-info-cell{
             vertical-align: top
         }
+      
     </style>
 </head>
 
@@ -76,8 +77,8 @@
         </tr>
     </table>
     <p class="titleSurat textCenter" style="height: 10pt; margin:5pt 0 !important"> <strong>Formulir Nilai Pembimbingan Kualifikasi Penelitian</strong></p>
-    <p style="height: 10pt; text-align: center;">Semester : <span> 7 </span> </p>
-    <p style="height: 10pt;text-align: center;">Prodi : <span>304/Teknik Informatika</span> </span></p>
+    <p style="height: 10pt; text-align: center; margin:2pt !important">Semester : <span> 7 </span> </p>
+    <p style="height: 10pt;text-align: center; margin:2pt !important">Prodi : <span>304/Teknik Informatika</span> </span></p>
     <p style="margin-bottom: 0 !important;"><strong>A. Data Peserta Seminar Kualifikasi Penelitian</strong></p>
     <p style="height: 10pt; margin-top: 0 !important; margin-bottom: 5pt !important;">NPM/Nama: <span> </span></p>
     <p style="height: 10pt; margin-top: 0 !important;margin-bottom: 5pt !important; ">Hari/Jam/Tanggal: </span></p>
@@ -89,8 +90,8 @@
     <p style="height: 10pt; margin-top: 0 !important; margin-bottom: 15pt !important;"> Jumlah mengikuti kegiatan penunjang : <span> </span></p>
     <table>
         <tr>
-            <th style="width: 10%; text-align: center;">No</th>
-            <th style="width: 70%; text-align: center;"> Point Penilaian</th>
+            <th style="width: 2%; text-align: center;">No</th>
+            <th style="width: 68%; text-align: center;"> Point Penilaian</th>
             <th style="width: 10%; text-align: center;"> Nilai</th>
             <th style="width: 10%; text-align: center;"> Bobot</th>
             <th style="width: 10%; text-align: center;">Nilai Pembimbing</th>
@@ -155,7 +156,7 @@
     <p>Demikian nilai bimbingan ini kami sampaikan dengan sebenar-benarnya, dan diserahkan sebagai syarat pengajuan SeminarKualifikasi Penelitian untuk mahasiswa ybs.</p>
     <p style="margin:0 !important">Bandung, 23/07/2020 </p>
     <table>
-        <tr>
+        <tr style="padding:0 !important">
             <td style="width: 45%; padding-top:0 !important">
                 <p style="text-align: center; margin-bottom:0 !important">Pembimbing Kualifikasi Penelitian,,</p>
                 <br>

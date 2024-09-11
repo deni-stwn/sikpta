@@ -76,49 +76,67 @@
         </tr>
     </table>
     <p class="titleSurat textCenter" style="height: 10pt"> <strong>Form Catatan Perbaikan Seminar Kualifikasi Penelitian</strong></p>
-    <p style="height: 10pt">Semester<span style="color:white">aaaa/a//</span> : <span> 7</span></p>
-    <p style="height: 10pt">Prodi<span style="color:white">aaaaaaaa///</span> : <span> </span></p>
-    <p style="height: 10pt">NPM/Nama<span style="color:white">aaa/</span> : <span> </span></p>
-    <p style="height: 10pt">Judul TA<span style="color:white">aaaaaa</span> :<span> </span></p>
-    <p>Catatan Perbaikan: (diisi saat sidang berlangsung dan diserahkan langsung ke peserta ybs setelah Seminar
-        Kualifikasi Penelitian selesai)</p>
+    <p style="height: 10pt; text-align:center">Semester : <span> 7</span></p>
+    <p style="height: 10pt; text-align:center">Prodi : <span> </span></p>
+    <p style="height: 10pt">Hari/tanggal/jam: <span> </span></p>
+    <p style="height: 10pt">NPM/Nama: <span> </span></p>
+    <p style="height: 10pt">Judul TA:<span> </span></p>
+    <p style="margin-top:0 !important;margin-bottom:0 !important; font-size:12px !important">Catatan Perbaikan: (diisi saat sidang berlangsung dan diserahkan langsung ke peserta ybs setelah Seminar Kualifikasi Penelitian selesai)</p>
     <table>
         <tr>
-            <th style="width: 45%;">Substansi utk Saran Perbaikan</th>
-            <th style="width: 55%;">Catatan Saran Perbaikan</th>
+            <th style="width: 45%;">Deskripsi Perbaikan</th>
+            <th style="width: 55%;">Catatan</th>
         </tr>
         <tr>
-            <td style="vertical-align: top; height: 140pt;">-Relevansi usulan solusi terhadap persoalan 
-                <br>
-                - Ketepatan penggunaan konsep & literatur
-                <br>
-                -Tahap pembangunan produk TA
-                <br>
-                -Teknik dan kakas yang digunakan
-                <br>
-                - Simpulan TA
-                <br>
-                - Prospek kelanjutan TA
-                <br>
-                - Lainnya seperti Format Laporan, dsb
+            <td style="">Latar belakang & rumusan masalah
+            </td>
+            <td></td>
+        </tr>
+        <tr >
+            <td style="padding-top:5pt; padding-bottom:5pt">Relevansi usulan solusi terhadap persoalan
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="padding-top:15pt; padding-bottom:15pt">Ketepatan penggunaan konsep & literatur
+            </td>
+            <td></td>
+        </tr>
+        <tr >
+            <td style="padding-top:15pt; padding-bottom:15pt">Tahap pembangunan produk TA
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="padding-top:15pt; padding-bottom:15pt">Teknik dan kakas yang digunakan
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="padding-top:15pt; padding-bottom:15pt">Simpulan TA dan prospek kelanjutan TA
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td style="padding-top:15pt; padding-bottom:15pt">Lain-lain
             </td>
             <td></td>
         </tr>
     </table>
-    <p style="margin-top: 10pt; height: 10pt">Pengesahan Perbaikan: (ditandatangani saat selesai perbaikan)</p>
+    <p style="margin-top: 0pt !important; height: 10pt">Pengesahan Perbaikan: (ditandatangani saat selesai perbaikan)</p>
     <table>
         <tr>
             <td style="height: 60pt; vertical-align: top;padding-top: 0px !important; padding-left: 5px !important">
-                <p>Peserta,</p>
-            <p>(.......................)</p>
+                <p style="margin-top: 0 !important;">Peserta,</p>
+            
             </td>
             <td style="height: 60pt; vertical-align: top;padding-top: 0px !important; padding-left: 5px !important">
-                <p>Pembimbing Utama,</p>
-                <p>(.......................)</p>
+                <p style="margin-top: 0 !important;">Pembimbing Utama,</p>
+              
             </td>
             <td style="height: 60pt; vertical-align: top;padding-top: 0px !important; padding-left: 5px !important">
-                <p>Pembimbing Pendamping,</p>
-                <p>(.......................)</p>
+                <p style="margin-top: 0 !important;">Pembimbing Pendamping,</p>
+                
             </td>
         </tr>
     </table>
