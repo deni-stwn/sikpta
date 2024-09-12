@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Nilai Seminar Kerja Praktek</title>
+    <title>CATATAN PERBAIKAN SEMINAR/SIDANG TA</title>
     <style>
         body {
             font-family: 'Times New Roman', Times, serif, sans-serif;
@@ -67,7 +67,7 @@
         <tr>
             <td class="sub-title-cell">
                 <b>FORMULIR</b><br />
-                CATATAN PERBAIKAN SEMINAR/SIDANG KP/TA
+                CATATAN PERBAIKAN SEMINAR/SIDANG TA
             </td>
             <td class="doc-info-cell">
                 <b>No. Dokumen: </b><br />
@@ -75,7 +75,7 @@
             </td>
         </tr>
     </table>
-    <p class="titleSurat textCenter" style="height: 10pt"> <strong>Form Catatan Perbaikan Seminar Kualifikasi Penelitian</strong></p>
+    <p class="titleSurat textCenter" style="height: 10pt"> <strong>Form Catatan Perbaikan Seminar Kerja Praktek</strong></p>
     <p style="height: 10pt">Semester<span style="color:white">aaaa/a//</span> : <span> 7</span></p>
     <p style="height: 10pt">Prodi<span style="color:white">aaaaaaaa///</span> : <span> </span></p>
     <p style="height: 10pt">NPM/Nama<span style="color:white">aaa/</span> : <span> </span></p>
